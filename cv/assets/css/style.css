@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background: #f4f6fa;
+    color: #333;
+    line-height: 1.5;
+}
+
+.cv-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-areas: 
+        "header header"
+        "izquierda derecha";
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Encabezado */
+header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    background: #dde5f0;
+    padding: 20px;
+    gap: 20px;
+}
+
+header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+header h1 {
+    font-size: 26px;
+    color: #1c2e4a;
+}
+
+header h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #444;
+}
+
+/* Columna izquierda */
+.columna-izquierda {
+    grid-area: izquierda;
+    background: #f9fbff;
+    border-right: 1px solid #e0e0e0;
+}
+
+.columna-izquierda section {
+    padding: 25px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.columna-izquierda h3 {
+    font-size: 18px;
+    color: #1c2e4a;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #1c2e4a;
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+.columna-izquierda ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.columna-izquierda li {
+    margin-bottom: 8px;
+}
+
+.educacion .item {
+    margin-top: 10px;
+}
+
+.educacion h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1c2e4a;
+}
+
+.educacion p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Columna derecha */
+.columna-derecha {
+    grid-area: derecha;
+}
+
+.columna-derecha section {
+    padding: 25px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.columna-derecha h3 {
+    font-size: 18px;
+    color: #1c2e4a;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #1c2e4a;
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+.perfil p {
+    font-size: 15px;
+    color: #444;
+}
+
+.experiencia .item {
+    margin-bottom: 20px;
+}
+
+.experiencia h4 {
+    font-size: 16px;
+    color: #222;
+}
+
+.experiencia span {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin: 3px 0;
+}
+
+.experiencia p {
+    font-size: 14px;
+    color: #444;
+}
+
+@media (max-width: 768px) {
+    .cv-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "header"
+            "izquierda"
+            "derecha";
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .columna-izquierda {
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+    }
+}
