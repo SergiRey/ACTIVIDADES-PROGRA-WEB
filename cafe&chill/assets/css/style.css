@@ -5,7 +5,13 @@ body{
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #382c15;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(/assets/IMG/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
     align-items: center;
 }
 
@@ -294,3 +300,4 @@ nav ul li a:hover{
     box-sizing: border-box;
     border-radius: 3px 3px 50px 50px;
 }
+
