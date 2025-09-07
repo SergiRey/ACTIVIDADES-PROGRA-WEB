@@ -1,0 +1,302 @@
+body{
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(/assets/IMG/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    align-items: center;
+}
+
+::-webkit-scrollbar {width: 12px;}
+
+::-webkit-scrollbar-track {
+    background: #3f1e03ce;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(65, 38, 3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(41, 24, 2);
+    border-radius: 3px;
+
+}
+
+.content{
+    background-color: rgba(145, 120, 68, 0.4);
+    box-shadow: 0px 0px 60px rgb(107, 92, 60);
+    color: #f3e7d1;
+    margin: 50px;
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+/*FONTS*/
+.borel-regular {
+    font-family: "Borel", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    background-color: rgba(51, 20, 2, 0.644);
+    color: #fff;
+    padding: 10;
+    margin: .25rem;
+    box-shadow: 0 4px 10px rgb(39, 25, 8);
+    border-bottom: 0 cm;
+    text-align: center;
+    display:flow-root;
+    border-radius: 30px 30px 0px 0px;
+}
+
+header p{
+    font-weight: lighter;
+    margin-bottom: 0.25rem;
+    font-size: x-large;
+}
+
+header h1{
+    font-family: "Borel";
+    text-shadow: 3px 3px 0px rgb(39, 25, 8);
+}
+
+nav{
+    margin: 0.25rem;
+    background-color: rgb(44, 33, 21);
+    box-shadow: 0 0px 20px rgb(34, 26, 17);
+    border-radius: 3px 3px 0px 0px;
+}
+
+nav ul{
+    list-style: none;
+    margin: .65rem;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a{
+    display: block;
+    padding: 15px 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3, ease;
+}
+
+nav ul li{
+    display: block;
+    padding: 15px 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    background-color: rgba(51, 20, 2, 0.644);
+    box-shadow: 0px 0px 20px rgba(48, 20, 4, 0.644);
+    border-radius: 10px;
+    padding: 15px;
+    color: rgba(255, 255, 255);
+}
+
+.carrusel{
+    margin: 0;
+    width: 100%;
+    height: 30rem; /*1REM = 16px*/
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(39, 25, 8);
+}
+
+.img-productos{
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+}
+
+.img-productos img{
+    width: 50rem;
+    height: 30rem;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-250rem);
+    }
+}
+
+#menu{
+    width: 90%;
+    margin: 1.5rem;
+    padding: 1.5rem 2rem;
+    background-color: rgb(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 10px rgb(39, 25, 8);
+    border-radius: 12px;
+    color: black;
+}
+
+#menu h1{
+        font-family: "Borel";
+}
+
+#menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li{
+    margin-bottom: 1.6rem;
+    border-left: 4px solid rgb(70, 32, 1);
+    padding-left: 1rem;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#menu ul li:hover{
+    background-color: rgb(175, 146, 91, 0.5);
+    transform: scale(1.02);
+}
+
+#menu ul li strong{
+    color: rgb(70, 32, 1);
+    font-size: 1.75rem;
+}
+
+#menu ul li small{
+    display: block;
+    font-size: 0.85rem;
+    font-style: italic;
+    color:rgb(70, 32, 1);
+    margin-top: 0.2rem;
+}
+
+#promociones{
+    width: 90%;
+    margin: 1.5rem;
+    padding: 1.5rem 2rem;
+    background-color: rgb(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 10px rgb(39, 25, 8);
+    border-radius: 12px;
+    color: black;
+}
+
+#promociones table{
+    width: 100%;
+}
+
+#promociones caption{
+    font-family: "Borel";
+}
+
+#promociones th{
+    height: 30px;
+}
+
+#promociones td{
+    text-align: center;
+    height: 50px;
+}
+
+#aboutus{
+    display: flex;
+}
+
+.abt h1{
+    font-family: "Borel";
+    text-align: center;
+    font-size: 50px;
+    padding-left: 50px;
+    margin-bottom: 0px;
+}
+
+.abt p{
+    text-align: justify;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+.abt2 h1{
+    font-family: "Borel";
+    text-align: center;
+    font-size: 20px;
+    margin: 60px 80px 0px 80px;
+}
+
+.abt2 p{
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    margin: 0px 80px 0px 80px;
+}
+
+#cold-brew{
+    width: 85%;
+    position: relative;
+    margin: 0px 0px 0px 50px;
+}
+
+.content_abt_item{
+    width: 50%;
+    position: relative;
+    margin: auto;
+}
+
+.content_abt_item:hover:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(
+        rgba(22, 1, 1, 0.5),
+        rgba(0,0,0,1));
+}
+
+.content_abt_item:hover{
+    width: 90%;
+    margin: auto;
+    transition: all .8s ease-in-out;
+}
+
+.content_abt_txt{
+    visibility: visible;
+    position: absolute;
+}
+
+.content_abt_img{
+    width: 100%;
+    display: block;
+}
+
+#contacto{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20;
+    padding: 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border-radius: 3px 3px 50px 50px;
+}
